@@ -38,7 +38,7 @@ function App() {
     
     <Personnages nasila={data} rename={rename}/>
 
-    {/* boucle sur article*/}
+  
     {article.map( (el, i) => {
         return <Articles key={i} donnee={el}/>
       })}

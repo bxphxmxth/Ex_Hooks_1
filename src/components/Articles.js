@@ -1,14 +1,11 @@
 import React from "react";
 
-class Article extends React.Component{
+function Articles({donnee}) {
+     return (
+         <div>
+           <h1>Marque : {donnee.marque}, model :{donnee.model}</h1>  
+         </div>
+     )
+ }
 
-     render(){
-          return(
-               <div>
-               <h1>Marque : {this.props.donnee.marque}, model :{this.props.donnee.model}</h1>  
-             </div>
-          )
-     }
-}
-
-export default Article;
+export default Articles;
